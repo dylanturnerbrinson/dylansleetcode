@@ -1,4 +1,6 @@
-﻿public class Solution
+﻿//Note for whoever has to bear witness to this- the solution does not want the duplicates removed. It wants the duplicates changed and sorted to the end, then the array sliced on that boundary.
+
+public class Solution
 {
     public int RemoveDuplicates(int[] nums)
     {
