@@ -51,7 +51,7 @@ public class Solution
                 }
             }
 
-            temp += (addNum.ToString() + checkChar);
+            temp += $"{addNum}" + checkChar;
             ans = temp;
             n--;
         }
