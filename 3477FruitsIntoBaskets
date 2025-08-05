@@ -1,0 +1,19 @@
+public class Solution {
+    public int NumOfUnplacedFruits(int[] fruits, int[] baskets) {
+        List<int> fruitList = fruits.ToList();
+        List<int> basketList = baskets.ToList();
+        int ans = 0;
+
+        for (int i = 0; i < fruitList.Count(); i++){
+            int fruit = fruitList[i];
+            int basket = basketList.IndexOf(basketList.FirstOrDefault(b => b >= fruit));
+            if (basket != -1){
+                basketList.RemoveAt(basket);
+            } else {
+                ans++;
+            }
+        }
+
+        return ans;
+    }
+}
